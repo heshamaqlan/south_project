@@ -1071,9 +1071,7 @@ main {
     border-radius: 16px;
   }
 }
-/* =========================================
-   قسم التواصل فقط
-========================================= */
+
 
 .contact-section {
   width: min(1200px, calc(100% - 40px));
@@ -1130,7 +1128,7 @@ main {
 
 .contact-intro {
   margin: 0 0 38px;
-  color: #cdc0b3;
+  color: #e9e5e5;
   font-size: 14px;
   line-height: 2;
   
@@ -1383,4 +1381,22 @@ font-size: 14px;
     margin-top: 30px; /* هامش علوي */
     padding-top: 20px; /* مسافة بادئة علوية */
     text-align: center; /* توسيط النص */
+}
+.footer-column a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--text-color-1); 
+  transition: width 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: var(--text-color-1); 
+}
+
+.footer-column a:hover::after {
+  width: 100%;
 }
