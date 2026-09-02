@@ -259,10 +259,7 @@
   </div>
 </section>
 
-
-</section>
-
-
+<section id="reviews" class="reviews-section" aria-labelledby="reviews-title">
   <div class="reviews-heading">
     <h2 id="reviews-title">آراء العملاء</h2>
     <p>
@@ -422,6 +419,28 @@
     revealObserver.observe(element);
   });
 </script>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const workCards = document.querySelectorAll('.work-card');
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selectedFilter = button.dataset.filter;
+
+        filterButtons.forEach((item) => {
+          const isActive = item === button;
+          item.classList.toggle('active', isActive);
+          item.setAttribute('aria-pressed', String(isActive));
+        });
+
+        workCards.forEach((card) => {
+          const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+          card.classList.toggle('is-hidden', !shouldShow);
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

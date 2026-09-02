@@ -135,6 +135,30 @@ main {
   background-color: rgba(124, 113, 97, 0.025);
 }
 
+/* خلفيات الأقسام بالتناوب */
+main > .hero-section,
+main > #services,
+main > #reviews {
+  background-color: #ffffff;
+}
+
+main > #works,
+main > #about,
+main > #contact {
+  background-color: #f7f4ee;
+}
+
+main > #works,
+main > #services,
+main > #about,
+main > #reviews,
+main > #contact {
+  width: 100%;
+  max-width: none;
+  padding-right: max(20px, calc((100% - 1200px) / 2));
+  padding-left: max(20px, calc((100% - 1200px) / 2));
+}
+
 .section-content {
   width: min(720px, 100%);
 }
@@ -452,7 +476,7 @@ main {
 .work-overlay span {
   display: block;
   margin-bottom: 8px;
-  color: var(--text-color-);
+  color: var(--text-color-1);
   font-size: 13px;
   font-weight: 700;
 }
@@ -774,7 +798,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 12px 28px;
-    font-family: var(--font-primary);
+    font-family: 'Cairo', sans-serif;
     font-weight: 600;
     font-size: 0.95rem;
     margin-top: 42px;
