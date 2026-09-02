@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="الجنوب للديكور والتشطيبات الحديثة" />
+  <title>الجنوب للديكور</title>
+  <link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet"></head>
+<body>
+  <header class="topbar" id="topbar">
+    <nav class="navbar" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#home" aria-label="الجنوب للديكور - الرئيسية">
+        <img src="image/logo1.png" alt="شعار الجنوب للديكور" />
+        <div class="namelogo">
+        <p >الجنوب للديكور</p>       
+        <p >Al-Janoob for Decoration</p>
+        </div>
+        
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#works">أعمالنا</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#reviews-title">آراء العملاء</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+<!-- /* ***************************** الرئيسي************************ */ -->
+  <main id="home">
+    <section class="content-section hero-section" aria-labelledby="home-title">
+  <div class="hero-container">
+    
+    <!-- جهة النص (على اليمين) -->
+    <div class="hero-text">
+      <!-- السطر الأول -->
+      <p class="hero-line-1">ــــــــ عالم الديكور والتصاميم العصرية</p>
+      
+      <!-- السطر الثاني والسطر الثالث داخل عنوان رئيسي -->
+      <h1 class="hero-heading">
+        <span class="hero-line-2">خبراء في صناعة الجمال داخل <span class="highlight">منزلك</span></span>
+        <span class="hero-line-3">من الفكرة إلى التنفيذ، نرافقك بخبرة وإتقان</span>
+      </h1>
+      
+      <!-- السطر الرابع -->
+      <p class="hero-line-4">
+        في الجنوب للديكور، نبتكر تفاصيل تصنع الفرق. نقدم أحدث تصاميم الديكور والتشطيبات الداخلية، ونوفر حلولاً عصرية تشمل بديل الرخام والخشب والشيبورد والباركيه، إلى جانب تفصيل غرف النوم بأسلوب مبتكر وجودة تليق بتطلعاتك.
+      </p>
+    </div>
+
+    <!-- جهة الصورة (على اليسار) -->
+    <div class="hero-image-wrapper">
+      <img src="image/home.png" alt="الجنوب للديكور - الصفحة الرئيسية" class="hero-img">
+    </div>
+
+  </div>
+</section>
+
+<!-- /* ***************************** اعمالنا************************ */ -->
+ <section id="works" class=" works-section" aria-labelledby="works-title">
+      <div class="works-heading">
+        <h2 id="works-title">أعمالنا المنفذة</h2>
+        <p class="p-works">نرسم الفخامة في كل زاوية, مشاريع سكنية وتجارية صُممت ونُفذت بدقة متناهية لتخلق مظهراً يأسُر الألباب.</p>
+        <p class="eyebrow">معرض الصور</p>
+        
+      </div>
+
+      <div class="work-filters" role="group" aria-label="تصنيفات الأعمال">
+        <button class="filter-button active" type="button" data-filter="all">الكل</button>
+        <button class="filter-button" type="button" data-filter="wood">بديل الخشب</button>
+        <button class="filter-button" type="button" data-filter="marble">بديل الرخام</button>
+        <button class="filter-button" type="button" data-filter="tv">ديكورات التلفزيون</button>
+        <button class="filter-button" type="button" data-filter="bedroom">غرف النوم</button>
+        <button class="filter-button" type="button" data-filter="parquet">الباركيه</button>
+        <button class="filter-button" type="button" data-filter="wall">بديل الشيبورد</button>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card" data-category="tv">
+          <img src="image/screen.jpeg" alt="خلفية تلفزيون مودرن" />
+          <div class="work-overlay"><span>ديكورات التلفزيون</span><h3>خلفية تلفزيون بتفاصيل أنيقة</h3></div>
+        </article>
+       
+        <article class="work-card" data-category="marble">
+          <img src="image/rtham.jpeg" alt="تركيب بديل رخام صالة" />
+          <div class="work-overlay"><span>بديل الرخام</span><h3>تكسية ببديل الرخام بعروق ذهبية</h3></div>
+        </article>
+        
+        <article class="work-card" data-category="bedroom">
+          <img src="image/room.jpeg" alt="غرفة نوم ماستر" />
+          <div class="work-overlay"><span>غرف النوم</span><h3>غرفة نوم ماستر بتصميم هادئ</h3></div>
+        </article>
+        <article class="work-card" data-category="wall">
+          <img src="image/japs_smanit.jpeg" alt="بديل شيبورد جداري" />
+          <div class="work-overlay"><span>بديل الشيبورد</span><h3>تفاصيل جدارية تضيف عمقاً للمكان</h3></div>
+        </article>
+        <article class="work-card" data-category="parquet">
+          <img src="image/parke.jpeg" alt="أرضيات باركيه" />
+          <div class="work-overlay"><span>الباركيه</span><h3>أرضيات باركيه دافئة وأنيقة</h3></div>
+        </article>
+         <article class="work-card" data-category="wood">
+          <img src="image/decot_wook.jpeg" alt="ديكورات خشبية" />
+          <div class="work-overlay"><span>ديكو خشب</span><h3> تصاميم خشبية عصرية </h3></div>
+        </article>
+      </div>
+    </section>
+
+
+
+    
+
+<section id="services" class="services-section" aria-labelledby="services-title">
+  
+
+  <div class="services-header">
+    <h2 id="services-title">خدماتنا</h2> 
+    <p>نوفر خدمات التوريد والتركيب في بديل الرخام، وبديل الخشب، وبديل الشيبورد، والباركيه، إضافة إلى تفصيل غرف النوم والتشطيبات الداخلية الحديثة.</p>
+  </div>
+
+  <!-- شبكة الكروت (تتوزع تلقائياً حسب الشاشة) -->
+  <div class="cards-grid">
+
+    <!-- الكرت الأول: بديل الرخام -->
+    <div class="feature-card">
+      <div class="card-image-wrapper">
+        <img src="image/rokham1.jpg" alt="تركيب بديل الرخام">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">بديل الرخام</h3>
+        <p class="card-description">
+          تركيب وتوريد ألواح بديل الرخام بأشكال ومقاسات متنوعة تعطي فخامة الرخام الطبيعي بأقل تكلفة وأعلى جودة.
+        </p>
+      </div>
+    </div>
+
+    <!-- الكرت الثاني: بديل الخشب -->
+    <div class="feature-card">
+      <div class="card-image-wrapper">
+        <img src="image/wood1.jpg" alt="تركيب بديل الخشب">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">بديل الخشب</h3>
+        <p class="card-description">
+          شرائح بديل الخشب للديكورات الداخلية والجدران، تُضفي لمسة دافئة وعصرية للمساحات المنزلية والمكتبية.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="feature-card">
+      <div class="card-image-wrapper">
+        <img src="image/shpord1.jpg" alt="بديل الشيبورد">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">بديل الشيبورد</h3>
+        <p class="card-description">
+          حلول متكاملة من ألواح بديل الشيبورد للأسطح وتكسيات الحوائط بتصاميم وألوان تناسب كافة الأذواق.
+        </p>
+      </div>
+    </div>
+
+    <!-- الكرت الرابع: الباركيه -->
+    <div class="feature-card">
+      <div class="card-image-wrapper">
+        <img src="image/barki1.jpg" alt="تركيب الباركيه">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">أرضيات الباركيه</h3>
+        <p class="card-description">
+          توريد وتركيب أرضيات الباركيه المعزولة والمقاومة للرطوبة بتصاميم خشبية متناسقة مع أثاثك.
+        </p>
+      </div>
+    </div>
+
+    <!-- الكرت الخامس: تفصيل غرف النوم والتشطيبات -->
+    <div class="feature-card">
+      <div class="card-image-wrapper">
+        <img src="image/room1.jpg" alt="غرف النوم والتشطيبات">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">غرف النوم والتشطيبات</h3>
+        <p class="card-description">
+          تفصيل غرف النوم الحديثة وتنفيذ التشطيبات الداخلية المتكاملة بأحدث المعايير الهندسية.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- قسم من نحن فقط -->
+<section id="about" class="about-section" aria-labelledby="about-title">
+  <div class="about-layout">
+
+    <!-- الجهة اليمنى: عنوان القسم -->
+    <div class="about-intro">
+      <a href="#about" class="about-link">نبذة عنا</a>
+
+      <div class="about-heading">
+        <h2 id="about-title">من نحن</h2>
+      </div>
+    </div>
+
+  
+    <div class="about-content">
+      <div class="company-intro">
+        <h1>شركة الجنوب الحديثة للديكور</h1>
+        <p>
+          الجنوب للديكور مؤسسة متخصصة في تصميم وتنفيذ أعمال الديكور الداخلي،
+          نسعى إلى تقديم مساحات تجمع بين الأناقة والراحة والعملية. نعمل على فهم
+          احتياجات عملائنا وتحويل أفكارهم إلى تصاميم متكاملة تحمل طابعاً خاصاً
+          وتفاصيل مدروسة.
+        </p>
+        <p>
+          نرافق العميل في جميع مراحل المشروع، بدءاً من الفكرة والتخطيط، مروراً
+          باختيار الألوان والخامات، وصولاً إلى التنفيذ النهائي، لنضمن نتيجة
+          متناسقة تلبي التطلعات وتفوق التوقعات.
+        </p>
+      </div>
+
+      <div class="about-values">
+        <div class="about-row">
+          <article class="about-item">
+            <span class="item-number">01</span>
+            <div class="item-text">
+              <h3>رؤيتنا</h3>
+              <p>أن نكون الخيار الأول في مجال التصميم والديكور من خلال تقديم أعمال مبتكرة بجودة عالية.</p>
+            </div>
+          </article>
+
+          <article class="about-item">
+            <span class="item-number">02</span>
+            <div class="item-text">
+              <h3>رسالتنا</h3>
+              <p>تقديم حلول ديكور متكاملة تجمع بين الإبداع والجودة والاهتمام بأدق التفاصيل.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="about-row second-row">
+          <article class="about-item">
+            <span class="item-number">03</span>
+            <div class="item-text">
+              <h3>قيمنا</h3>
+              <p>الإبداع، الجودة، المصداقية، الالتزام، ورضا العميل في كل مشروع ننفذه.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+          <a class="about-contact-button" href="#contact">
+  تواصل معنا وخلّنا نبدع
+</a>
+    </div>
+
+
+  </div>
+</section>
+
+
+</section>
+
+
+  <div class="reviews-heading">
+    <h2 id="reviews-title">آراء العملاء</h2>
+    <p>
+      رضا عملائنا هو الدافع الأكبر لنا. نحرص في كل مشروع على تقديم تجربة راقية
+      تبدأ من الاستشارة وتمتد حتى اكتمال أجمل التفاصيل.
+    </p>
+    <span class="reviews-kicker">ثقة نعتز بها</span>
+  </div>
+
+  <div class="reviews-grid">
+    <article class="review-card">
+      <div class="reviewer-info">
+        <img src="image/person.png" alt="صورة عميل موثوق" class="reviewer-image" />
+        <div>
+          <h3></p>احمد الحاج</h3>
+          <span>عميل موثوق</span>
+        </div>
+      </div>
+
+      <p class="review-text">
+بصراحة النتيجة طلعت رهيبة 😍
+من أول التصميم إلى التنفيذ، كل شيء كان مرتب، والجبس بورد للأسقف والجدران أعطى المكان شكل مختلف تمامًا.
+شكرًا لكم، أبدعتوا 👌      </p>
+ <div class="line"></div>
+      <h5>تم عمل له  جبس بورد واسقف جدران</h5>
+    </article>
+
+    <article class="review-card">
+      <div class="reviewer-info">
+        <img src="image/person.png" alt="صورة عميل موثوق" class="reviewer-image" />
+        <div>
+          <h3>مبارك النجيمي</h3>
+          <span>عميل موثوق</span>
+        </div>
+      </div>
+
+      <p class="review-text">
+       ما شاء الله عليكم، شغل نظيف ومرتب والله 
+    سمنت بورد طلع رهيب، وفرحتنا بالنتيجة كبيرة 
+تسلموا وما قصرتوا، الله يعطيكم العافية ❤️
+      </p>
+      <div class="line"></div>
+      <h5>تم عمل له سمنت بورد</h5>
+    </article>
+  </div>
+</section>
+<section id="contact" class="contact-section" aria-labelledby="contact-title">
+  <div class="contact-layout">
+    
+    <div class="contact-info-card">
+      <h2 id="contact-title">معلومات الاتصال</h2>
+      <p class="contact-intro">هل لديك فكرة أو مشروع جديد؟ تواصل معنا، ودع فريقنا يساعدك في تحويل أفكارك إلى تصميم مميز يجمع بين الأناقة والجمال والعملية.</p>
+
+      <div class="contact-details">
+        
+        <div class="contact-detail">
+          <img src="image/w-phone.png" alt="أيقونة الهاتف" />
+          <div>
+            <h3>الهاتف الجوال</h3>
+            <a href="tel:+9660506933565">0506933565</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <img src="image/w-white.png" alt="أيقونة الواتساب" />
+          <div>
+            <h3>واتساب مباشر</h3>
+            <a href="https://wa.me/9660506933565?text=مرحباً، أريد الاستفسار عن خدمات الديكور"> 0506933565 966+</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <img src="image/w-gamil.png" alt="أيقونة البريد الإلكتروني" />
+          <div>
+            <h3>البريد الإلكتروني</h3>
+            <a href="mailto:info@example.com">aalmshdly945@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="social-links" aria-label="حسابات التواصل الاجتماعي">
+        <a href="" aria-label="Instagram"><img src="image/instgram.png" alt="Instagram" /></a>
+        <a href="" aria-label="Facebook"><img src="image/facebook.png" alt="Facebook" /></a>
+        <a href="#" aria-label="Tiktok"><img src="image/tik-tok.png" alt="Tiktok" /></a>
+  
+      </div> -->
+    </div>
+   <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3847.521328718934!2d44.207966102190326!3d15.348226993614833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDIwJzUzLjYiTiA0NMKwMTInMjIuNiJF!5e0!3m2!1sar!2s!4v1788262089862!5m2!1sar!2s"
+        title="موقع الجنوب للديكور على الخريطة"
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-column logo-column">
+                    <img src="image/logo.png" alt="شعار الجنوب للديكور">
+                </div>
+                <div class="footer-column quick-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="home">الرئيسية</a></li>
+                        <li><a href="works">اعمالنا</a></li>
+                        <li><a href="services">خدماتنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column primary-services">
+                    <h3>الخدمات الأساسية</h3>
+                    <ul>
+                        <li><a href="#">بديل الخشب</a></li>
+                        <li><a href="#">بديل الرخام</a></li>
+                        <li><a href="#">أراضي باركية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column working-hours">
+                    <h3>ساعات العمل</h3>
+                    <p>من السبت – الخميس : 9:00 صباحاً – 9:00 مساءً</p>
+                    <p>الجمعة مغلق (عطلة نهاية الأسبوع)</p>
+                    <p>المملكة العربية السعودية</p>
+                </div>
+            </div>
+            <div class="copyrights">
+                <p>جميع الحقوق محفوظة © 2026 لموقع الجنوب الحديثة للديكور.</p>
+            </div>
+        </div>
+    </footer>
+  </main>
+
+  <script>
+    const topbar = document.getElementById('topbar');
+
+    window.addEventListener('scroll', () => {
+      topbar.classList.toggle('is-scrolled', window.scrollY > 24);
+    });
+  </script>
+
+<script>
+  const animatedElements = document.querySelectorAll(
+    'main > section, .work-card, .about-value-item, .review-card, .contact-map, .contact-info-card'
+  );
+
+  animatedElements.forEach((element) => {
+    element.classList.add('scroll-reveal');
+  });
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle('is-visible', entry.isIntersecting);
+    });
+  }, {
+    threshold: 0.14,
+    rootMargin: '0px 0px -8% 0px'
+  });
+
+
+  animatedElements.forEach((element) => {
+    revealObserver.observe(element);
+  });
+</script>
+
+</body>
+</html>
